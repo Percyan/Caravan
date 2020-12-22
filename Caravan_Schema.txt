@@ -1,0 +1,42 @@
+Caravan
+-GetPeople()
+-AddMember()
+-RemoveMember()
+-BanMember()
+-GetDestinations()
+-CaravanID		PK
+-DriverID		FK
+-EventID		FK
+-GroupName
+-RouteID		FK
+
+Caravan_Person
+-Caravan_PersonID	PK
+-CaravanID		FK
+-PersonID		FK
+
+Person
+-PersonID		PK
+-Email
+-Name
+-Age
+-PickupLocation
+
+Event
+-EventID
+-StartTime
+-EndTime
+-Destination
+-Name
+-Description
+
+Route
+-RouteID		PK
+
+Caravan_Route
+-Caravan_RouteID	PK
+-CaravanID		FK
+-PersonID		FK
+-RouteID		FK
+ (Get pickup location)
+-OrderInRoute (Which order pickup locations are visited)
